@@ -1,3 +1,7 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
+var ThumbnailList = require('./ThumbnailList');
+
 var options = {
     thumbnailData: [
         {
@@ -16,7 +20,7 @@ var options = {
         },
         {
             title: 'Node Courses',
-            number: 80,
+            number: 60,
             header: 'Learn Node JS',
             description: 'Node.js is a JavaScript runtime built on Chrome s V8 JavaScript engine.',
             imageUrl: 'http://code-maven.com/img/node.png'
@@ -25,4 +29,4 @@ var options = {
 };
 
 var element = React.createElement(ThumbnailList, options);
-React.render(element, document.querySelector('.container'));
+ReactDOM.render(element, document.querySelector('.container'));
